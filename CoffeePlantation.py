@@ -14,6 +14,9 @@ ekspor = pd.read_excel("Dataset/Nilai ekspor (upload).xlsx")
 gabungan = pd.concat([luasdanproduksi, ekspor], ignore_index=True)
 gabungan = gabungan.drop(index=[38,57], errors='ignore')
 
+st.write("Data Ekspor dan Nilai FOB:")
+st.dataframe(gabungan)
+
 # Ringkasan Data
 st.subheader("Ringkasan Data Gabungan")
 st.dataframe(gabungan.describe(include='all'))
