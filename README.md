@@ -96,6 +96,7 @@ Indonesia is one of the world’s largest coffee producers, with a significant c
 
 ## 📑 Data
  This data was taken from Badan Pusat Statistik (BPS)
+ 
 ## 📦 Requirements
 
 Install the required Python libraries using:
