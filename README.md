@@ -70,7 +70,7 @@ Indonesia is one of the world’s largest coffee producers, with a significant c
 
 4. **Comparison Between Coffee Production Exported and Used for Domestic Consumption**
    <p align="center">
-    <img src="Visualization Chart/Perbandingan Total Produksi dan Ekspor Kopi.png" width="500"><br>
+    <img src="Visualization Chart/Perbandingan Total Produksi dan Ekspor Kopi.png" width="300"><br>
     </p>
     From the chart, it is also clear that there is a significant gap between the amount of coffee exported and that used for domestic consumption. In 2023, Indonesia’s coffee exports accounted for 33.8% of total coffee production, while 66.2% of the coffee was used for other purposes (such as domestic consumption, stock, or losses in processing). Domestic demand holds a significant portion. This export dominance shows that only a small portion of domestic consumption is directed toward the international market.
 
