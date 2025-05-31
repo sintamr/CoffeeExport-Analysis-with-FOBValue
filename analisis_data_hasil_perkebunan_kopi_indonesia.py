@@ -13,10 +13,10 @@ import seaborn as sns
 import numpy as np
 
 luasdanproduksi = pd.read_excel("Dataset/Luas dan produksi (upload).xlsx")
-luasdanproduksi
+print(luasdanproduksi)
 
 ekspor = pd.read_excel("Dataset/Nilai ekspor (upload).xlsx")
-ekspor
+print(ekspor)
 
 gabungan = pd.concat([luasdanproduksi, ekspor], ignore_index=True)
 gabungan.to_csv("gabungan_vertikal.csv", index=False)
