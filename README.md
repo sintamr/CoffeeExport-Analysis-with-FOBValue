@@ -4,7 +4,7 @@
 This Streamlit web app presents visual insights into Indonesia's coffee plantation landscape by province and explores the export performance of coffee using Free on Board (FOB) values. The app is designed for interactive data exploration and analysis.
 
 <p align="center">
-  <img src="path/ke/gambar.jpg" width="600"><br>
+  <img src="Coffee_Plants.jpg" width="600"><br>
   <sub>
     Photo by <a href="https://unsplash.com/@projetocafegatomourisco?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">PROJETO CAFÉ GATO-MOURISCO</a> on <a href="https://unsplash.com/photos/coffee-berries-growing-on-a-leafy-branch-w2_RA1-3NaU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   </sub>
