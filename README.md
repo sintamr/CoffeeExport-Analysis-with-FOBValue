@@ -52,25 +52,25 @@ Indonesia is one of the world’s largest coffee producers, with a significant c
 
 1. **Top 5 Provinces with the Largest Coffee Plantation Area and Highest Production in Indonesia**
    <p align="center">
-    <img src="Visualization Chart/Top 5 Provinsi Berdasarkan Luas Area Perkebunan Kopi dan Hasil Produksi Kopi.png" width="869"><br>
+    <img src="Visualization Chart/Top 5 Provinsi Berdasarkan Luas Area Perkebunan Kopi dan Hasil Produksi Kopi.png" width="500"><br>
     </p>
   It can be observed that the province with the largest coffee plantation area and highest production in Indonesia is South Sumatra.   According to Kompas, the ideal yield from coffee plantations ranges between 1 to 4 tons per hectare. Based on this benchmark, among the top five provinces, South Sumatra demonstrates the most optimal coffee plantation performance, where the ratio between plantation area and production output appears to be balanced compared to the other provinces
 
 2. **Relationship Between Plantation Area and Coffee Production Output by Province**
    <p align="center">
-    <img src="Visualization Chart/Luas Area vs HasiL Produksi Kopi per Provinsi.png" width="869"><br>
+    <img src="Visualization Chart/Luas Area vs HasiL Produksi Kopi per Provinsi.png" width="500"><br>
     </p>
   It can be observed that there is a positive correlation between coffee plantation area and production output. In other words, the larger the coffee plantation area, the higher the coffee production. The data distribution on the graph shows that most of the points are located in areas with smaller plantation sizes (below 100,000 hectares) and lower coffee production (below 50,000 tons). There is one outlier (the point at the far upper right) indicating a province with an exceptionally large plantation area (around 250,000 hectares) and also a very high production output (approaching 200,000 tons).
 
 3. **Net Weight and FOB Value of Coffee Export Destination Countries**
    <p align="center">
-    <img src="Visualization Chart/Berat bersih dan Nilai FOB Negara Tujuan Ekspor Kopi Indonesia.png" width="869"><br>
+    <img src="Visualization Chart/Berat bersih dan Nilai FOB Negara Tujuan Ekspor Kopi Indonesia.png" width="500"><br>
     </p>
     As seen in the chart above, the United States has a high net weight (blue bar) and FOB value (red line) for coffee exports. Among all the countries presented in the chart, coffee exported to the U.S. has a higher price per ton compared to other countries. This high FOB value may be due to several factors, such as the export of higher-priced coffee (premium coffee), a large export volume, or a high purchasing power in the market.
 
 4. **Comparison Between Coffee Production Exported and Used for Domestic Consumption**
    <p align="center">
-    <img src="Visualization Chart/Perbandingan Total Produksi dan Ekspor Kopi.png" width="869"><br>
+    <img src="Visualization Chart/Perbandingan Total Produksi dan Ekspor Kopi.png" width="500"><br>
     </p>
     From the chart, it is also clear that there is a significant gap between the amount of coffee exported and that used for domestic consumption. In 2023, Indonesia’s coffee exports accounted for 33.8% of total coffee production, while 66.2% of the coffee was used for other purposes (such as domestic consumption, stock, or losses in processing). Domestic demand holds a significant portion. This export dominance shows that only a small portion of domestic consumption is directed toward the international market.
 
