@@ -27,6 +27,31 @@ This Streamlit web app presents visual insights into Indonesia's coffee plantati
 
 Make sure both Excel files are available in the same directory as the main Python file when running locally or deploying.
 
+## Goals
+
+Understanding Coffee Plantation Output by Province in Indonesia and Total Coffee Exported Abroad Along with Its FOB Value.
+
+## Case Overview
+
+Indonesia is one of the world’s largest coffee producers, with a significant contribution to the global coffee export market. However, there are challenges in understanding the distribution of plantation potential, land productivity, and coffee trade patterns in order to achieve optimal results. Analysis is essential to support decision-makers, coffee farmers, and entrepreneurs in optimizing policies, improving production efficiency, and enhancing the competitiveness of Indonesian coffee in the global market.
+
+## Problem
+
+1. Which province has the largest coffee plantation area and the highest production output?
+2. Is there a balance between plantation area and production volume?
+3. Which are the main destination countries with the highest FOB values and export volumes?
+4. What is the ratio between coffee production that is exported and that which remains for domestic use?
+
+## Activity of Project
+- Data Collection
+- Cleaning data
+- Visualization
+- Insight & Recommendation
+
+## Visualization
+
+
+
 ## 🛠️ Built With
 
 - **Python**
