@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Konfigurasi awal Streamlit
+# Set konfigurasi
 st.set_page_config(page_title="Analisis Kopi Indonesia", layout="wide")
 st.title("📊 Analisis Data Perkebunan & Ekspor Kopi Indonesia")
 
@@ -11,23 +11,13 @@ st.title("📊 Analisis Data Perkebunan & Ekspor Kopi Indonesia")
 luasdanproduksi = pd.read_excel("Dataset/Luas dan produksi (upload).xlsx")
 ekspor = pd.read_excel("Dataset/Nilai ekspor (upload).xlsx")
 
-# Normalisasi nama provinsi agar dapat digabungkan
-luasdanproduksi['38 Provinsi'] = luasdanproduksi['38 Provinsi'].str.strip().str.upper()
-ekspor['38 Provinsi'] = ekspor['38 Provinsi'].str.strip().str.upper()
+gabungan = pd.concat([luasdanproduksi, ekspor], ignore_index=True)
+gabungan = gabungan.drop(index=[38,57], errors='ignore')
 
-# Merge data berdasarkan nama provinsi
-gabungan = pd.merge(
-    luasdanproduksi,
-    ekspor,
-    on='38 Provinsi',
-    how='outer'  # Gunakan 'inner' jika ingin hanya provinsi yang muncul di kedua file
-)
-
-# Tampilkan data gabungan
 st.write("Data Ekspor dan Nilai FOB:")
 st.dataframe(gabungan)
 
-# Ringkasan statistik
+# Ringkasan Data
 st.subheader("Ringkasan Data Gabungan")
 st.dataframe(gabungan.describe(include='all'))
 
@@ -71,15 +61,11 @@ st.pyplot(fig2)
 
 # Ekspor vs FOB
 st.subheader("Ekspor Kopi vs Nilai FOB")
-
-# Filter hanya baris yang punya data ekspor (jika ada NaN)
-ekspor_data = gabungan.dropna(subset=['Negara Tujuan', 'Nilai FOB (US$)', 'Berat Bersih Ekspor Kopi (Ton)'])
-
 fig3, ax1 = plt.subplots(figsize=(10, 5))
-sns.lineplot(x='Negara Tujuan', y='Nilai FOB (US$)', data=ekspor_data, color='red', marker='o', ax=ax1)
-ax1.set_xticklabels(ekspor_data['Negara Tujuan'], rotation=45, ha='right')
+sns.lineplot(x='Negara Tujuan', y='Nilai FOB (US$)', data=gabungan, color='red', marker='o', ax=ax1)
+ax1.set_xticklabels(gabungan['Negara Tujuan'], rotation=45, ha='right')
 ax2 = ax1.twinx()
-sns.barplot(x='Negara Tujuan', y='Berat Bersih Ekspor Kopi (Ton)', data=ekspor_data, color='blue', ax=ax2)
+sns.barplot(x='Negara Tujuan', y='Berat Bersih Ekspor Kopi (Ton)', data=gabungan, color='blue', ax=ax2)
 ax1.set_ylabel('Nilai FOB (US$)')
 ax2.set_ylabel('Berat Bersih Ekspor Kopi (Ton)')
 fig3.tight_layout()
@@ -87,8 +73,8 @@ st.pyplot(fig3)
 
 # Pie Chart Produksi vs Ekspor
 st.subheader("Perbandingan Total Produksi dan Ekspor Kopi")
-produksi_total = gabungan['Produksi Perkebunan Kopi (Ribu Ton)'].sum(skipna=True)
-ekspor_total = gabungan['Berat Bersih Ekspor Kopi (Ton)'].sum(skipna=True)
+produksi_total = gabungan['Produksi Perkebunan Kopi (Ribu Ton)'].sum()
+ekspor_total = gabungan['Berat Bersih Ekspor Kopi (Ton)'].sum()
 
 data = {'Produksi': produksi_total, 'Ekspor': ekspor_total}
 fig4, ax = plt.subplots(figsize=(4, 4))
