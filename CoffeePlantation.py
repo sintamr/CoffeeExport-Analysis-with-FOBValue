@@ -11,11 +11,14 @@ st.title("📊 Analisis Data Perkebunan & Ekspor Kopi Indonesia")
 luasdanproduksi = pd.read_excel("Dataset/Luas dan produksi (upload).xlsx")
 ekspor = pd.read_excel("Dataset/Nilai ekspor (upload).xlsx")
 
+st.write("Data Luas dan Produksi:")
+st.dataframe(luasdanproduksi)
+
+st.write("Data Nilai Ekspor:")
+st.dataframe(ekspor)
+
 gabungan = pd.concat([luasdanproduksi, ekspor], ignore_index=True)
 gabungan = gabungan.drop(index=[38,57], errors='ignore')
-
-st.write("Data Ekspor dan Nilai FOB:")
-st.dataframe(gabungan)
 
 # Ringkasan Data
 st.subheader("Ringkasan Data Gabungan")
