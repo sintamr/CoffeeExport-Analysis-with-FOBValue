@@ -50,7 +50,10 @@ Indonesia is one of the world’s largest coffee producers, with a significant c
 
 ## Visualization
 
-
+1. Top 5 Provinces with the Largest Coffee Plantation Area and Highest Production in Indonesia
+   <p align="center">
+  <img src="Visualization Chart/Top 5 Provinsi Berdasarkan Luas Area Perkebunan Kopi dan Hasil Produksi Kopi.png" width="869"><br>
+  </p>
 
 ## 🛠️ Built With
 
