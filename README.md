@@ -94,6 +94,8 @@ Indonesia is one of the world’s largest coffee producers, with a significant c
 - **[Matplotlib](https://matplotlib.org/)** and **[Seaborn](https://seaborn.pydata.org/)** – For data visualization.
 - **OpenPyXL** – For reading Excel files (`.xlsx`).
 
+## 📑 Data
+ This data was taken from Badan Pusat Statistik (BPS)
 ## 📦 Requirements
 
 Install the required Python libraries using:
